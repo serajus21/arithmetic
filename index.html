@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARITHMETIC CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/7b8daf54c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <!-- input -->
+        <h1>Enter Your Values</h1>
+        <section class="input">
+            <input type="number" id="v1" placeholder="Enter first operand">
+            <input type="number" id="v2" placeholder="Enter second operand">
+        </section>
+        <!-- functions -->
+        <h3>Choose your operation</h3>
+        <section class="button">
+            <button onclick="input();sum()"> <i class="fa-solid fa-plus"></i> Summation</button>
+            <button onclick="input();sub();"> <i class="fa-solid fa-minus"></i> Substraction</button>
+            <button onclick="input();mult();"> <i class="fa-solid fa-xmark"></i> Multiplication</button>
+            <button onclick="input();div();"> <i class="fa-solid fa-divide"></i> Division</button>
+        </section>
+        <!-- output -->
+        <p id="output" class="output">Result will appear here...</p>
+    </main>
+</body>
+</html>

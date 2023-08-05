@@ -1,0 +1,69 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background: url('https://i.postimg.cc/W46pxz35/lon.jpg') no-repeat fixed; background-size: cover;}
+main 
+{
+    height: auto; width: 40%; background-image: linear-gradient(to right bottom, rgba(135, 206, 235, 0.8), rgba(240, 128, 128, 0.8)); padding: 60px; border-top-right-radius: 50px; border-bottom-left-radius: 50px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+
+
+/* input */
+h1 {text-align: center; -webkit-background-clip: text; background-clip: text; color: transparent; background-image: linear-gradient(to right, red, darkblue);}
+.input {margin-top: 15px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+input
+{
+    margin-top: 20px; padding: 10px 20px; font-family: 'Courier New', Courier, monospace; border: none; width: 350px;
+    background-color: rgba(0,0,0,0); border-bottom: 1px solid black; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+    transform: scale(1); color: black; font-weight: bolder;
+    transition: all 350ms ease-in-out;
+}
+input:focus {background-color: rgba(0,0,0,0.5); transform: scale(1.1); color: white;}
+
+/* functions */
+h3 {text-align: center; -webkit-background-clip: text; background-clip: text; color: transparent; background-image: linear-gradient(to right, red, darkblue, black); margin-top: 30px;}
+.button {display: flex; flex-direction: row; justify-content: center; align-items: center;}
+.button button
+{
+    margin: 10px 0 0 5px; padding: 5px; border: none; border-radius: 5px; border-bottom-left-radius: 0; font-weight: bolder; cursor: pointer;
+    background-color: rgba(0,0,0,0.5); color: white; transform: translateY(0); transition: all 500ms ease-in-out;
+}
+.button button:hover {background-color: rgba(0,0,0,0.8); transform: translateY(10px);}
+
+/* output */
+#output
+{
+    display: flex; flex-direction: row; justify-content: center; align-items: flex-end; text-align: center; border-radius: 10px; border-bottom: 2px solid black;
+    width: 100%; height: 15vh; margin-top: 10px; padding-bottom: 10px;
+    font-size: 20px; font-weight: bold; -webkit-background-clip: text; background-clip: text; color: transparent; background-image: linear-gradient(to right, darkblue, darkgreen);
+}
+
+
+
+
+
+
+/* for tablet */
+@media (max-width: 1000px)
+{
+    main {width: 80%;}
+    h1 {font-size: 20px;}
+    .input {margin-top: 10px;}
+    input {margin-top: 10px; transform: scale(0.9);}
+    input:focus {transform: scale(1);}
+    h3 {font-size: 16px;}
+    .button button {font-size: 10px;}
+    #output {font-size: 13.5px;}
+}
+
+
+
+/* for phone */
+@media (max-width: 500px)
+{
+    h1 {font-size: 16px;}
+    input {transform: scale(0.6);}
+    input:focus {transform: scale(0.65);}
+    .button button {transform: scale(0.7); margin-left: 0;}
+    h3 {font-size: 13px;}
+    #output {font-size: 12px;}
+}
